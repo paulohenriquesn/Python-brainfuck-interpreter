@@ -18,9 +18,6 @@ while i < len(codeBrainFuck)-1:
         memory[0] = i
         memory[1] = currentPointer
         memory[2] = pointerMemory[currentPointer]
-        print(memory[0])
-        print(memory[1])
-        print(memory[2])
         memory[3] = 1
     print(codeBrainFuck[i])
     if(codeBrainFuck[i] == '+'):
@@ -37,9 +34,6 @@ while i < len(codeBrainFuck)-1:
         Count = 1
         while(Count > 0):
             if(pointerMemory[currentPointer] > 0):
-                print('-',i)
-                print('>',codeBrainFuck[i])
-                print('=',currentPointer)
                 i+=1
                 Count = 0
             i-=1
@@ -52,6 +46,12 @@ while i < len(codeBrainFuck)-1:
     if (codeBrainFuck[i] == ','):
         ch = input('>')
         pointerMemory[currentPointer] = ord(ch)
+            
+                
+    
+   
+                    
+    
 print(9*'-')
 printLine()
         
