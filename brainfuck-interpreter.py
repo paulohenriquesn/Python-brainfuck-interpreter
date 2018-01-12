@@ -47,13 +47,11 @@ while i < len(codeBrainFuck)-1:
         memory[4] = i
         if (pointerMemory[memory[1]] > 0):
             i = memory[0]
-                
-            
-                
-    
-   
-                    
-    
+    if(codeBrainFuck[i] == '.'):
+        print(chr(pointerMemory[currentPointer]))
+    if (codeBrainFuck[i] == ','):
+        ch = input('>')
+        pointerMemory[currentPointer] = ord(ch)
 print(9*'-')
 printLine()
         
